@@ -1,0 +1,35 @@
+.brandAndnav {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid rgba(214, 47, 100, 0.85);
+}
+
+.brandAndnav a {
+	border: 2px solid rgba(0, 0, 0, 0.85) !important;
+    border-radius: 3px;
+    color: rgba(250, 250, 250, 1.00);
+    margin-left: 6.2px;
+}
+
+.brandAndnav ul li a:hover {
+    background-color: rgba(214, 47, 100, 0.85) !important;
+	border: 2px solid rgba(214, 47, 100, 0.85) !important;
+    color: rgba(250, 250, 250, 1.00) !important;
+    transition: 0.5s !important;
+}
+
+.disabled {
+    color: rgba(192, 0, 0, 1.00) !important;
+}
+
+.navbar-toggler button {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid rgba(0, 0, 0, 0.85);
+    border-radius: 3px;
+    margin-right: 6.2px;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(214, 47, 100, 0.85) !important;
+	border: 2px solid rgba(214, 47, 100, 0.85) !important;
+    transition: 0.5s !important;
+}

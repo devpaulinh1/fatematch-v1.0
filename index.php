@@ -11,7 +11,7 @@ $app->config('debug', true);
 $app->get('/', function() {
 	$page = new Fatematch\Page();
 
-	$page->setTpl("home");
+	$page->setTpl("index");
 });
 
 $app->run();

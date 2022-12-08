@@ -1,0 +1,8 @@
+.copyright {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+	border-top: 1px solid rgba(214, 47, 100, 0.85);
+    display: flex;
+    height: 40.6px;
+    justify-content: center;
+}
