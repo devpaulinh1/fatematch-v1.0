@@ -19,37 +19,40 @@
 	<div class="container-fluid">
 		<div class="header">
 			<div class="brandAndnav">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid">
-				<a class="navbar-brand" href="/">
-					<img src="views/resources/site/images/logo.png" alt="logo" width="30" height="24" />
-				</a>
-				<a class="nav-link" aria-current="page" href="/">FateMatch</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<img src="views/resources/site/icons/menu.png" alt="menu" width="30" height="24" />
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="/cadastro">Cadastre-se</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="/destaques">Destaques</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/login">Entrar</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="/salas">Salas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="/perfil">Perfil</a>
-					</li>
-					</ul>
-				</div>
-				</div>
-			</nav>
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="/">
+							<img src="views/resources/site/images/logo.png" alt="logo" width="30" height="24" />
+						</a>
+						<a class="nav-link" aria-current="page" href="/">FateMatch</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<img src="views/resources/site/icons/menu.png" alt="menu" width="30" height="24" />
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="/cadastro">Cadastre-se</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/destaques">Destaques</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/login">Entrar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/salas">Salas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/perfil">Perfil</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/logout">Sair</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</div>
