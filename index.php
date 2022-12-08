@@ -2,12 +2,16 @@
 
 require_once("vendor/autoload.php");
 
-$app = new \Slim\Slim();
+use \Slim\Slim;
+
+$app = new Slim();
 
 $app->config('debug', true);
 
 $app->get('/', function() {
-	$sql = new Fatematch\DB\Sql();
+	$page = new Fatematch\Page();
+
+	$page->setTpl("home");
 });
 
 $app->run();
