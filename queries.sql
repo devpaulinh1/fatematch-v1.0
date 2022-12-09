@@ -1,5 +1,19 @@
 USE db_fatematch;
 
+CREATE TABLE tb_usuarios(
+	id_usuario INT(11) NOT NULL AUTO_INCREMENT,
+	email VARCHAR(64) NOT NULL,
+	nome_usuario VARCHAR(64) NOT NULL,
+	senha VARCHAR(255) NOT NULL,
+    nome VARCHAR(255),
+    foto VARCHAR(255),
+    bio VARCHAR(255),
+	PRIMARY KEY(id_usuario)
+);
+
+#SENHA CRIPTOGRAFADA: admin
+INSERT INTO tb_usuarios(email, nome_usuario, senha) VALUES ('email@email.com', 'user123', '$2y$12$YlooCyNvyTji8bPRcrfNfOKnVMmZA9ViM2A3IpFjmrpIbp5ovNmga');
+
 CREATE TABLE tb_jogos(
 	id_jogo INT(11) NOT NULL AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,

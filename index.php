@@ -26,6 +26,20 @@ $app->get('/login', function() {
 	$page->setTpl("login");
 });
 
+$app->get('/cadastro', function() {
+	$page = new Page();
+
+	$page->setTpl("cadastro");
+});
+
+$app->post('/cadastro', function() {
+	User::save($_POST["email"], $_POST["username"], $_POST["password"]);
+
+	header("Location: /login");
+
+	exit;
+});
+
 $app->post('/login', function() {
 	User::login($_POST["email"], $_POST["password"]);
 
@@ -45,6 +59,19 @@ $app->get('/destaques', function() {
 	$page->setTpl("destaques", [
 		'topGames'=>$topGames,
 		'randomGroups'=>$randomGroups
+	]);
+
+});
+
+$app->get('/salas', function() {
+	User::verifyLogin();
+
+	$allGroups = Group::listAllGroups();
+
+	$page = new Page();
+
+	$page->setTpl("salas", [
+		'allGroups'=>$allGroups
 	]);
 
 });

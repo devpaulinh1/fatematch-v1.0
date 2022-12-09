@@ -15,6 +15,13 @@ class Group extends Model{
 							ORDER BY RAND() LIMIT 2");
 	}
 
+	public static function listAllGroups() {
+		$sql = new Sql();
+
+		return $sql->select("SELECT s.*, j.nome FROM tb_salas s
+							INNER JOIN tb_jogos j ON j.id_jogo = s.id_jogo WHERE 1 = 1");
+	}
+
 }
 
 ?>

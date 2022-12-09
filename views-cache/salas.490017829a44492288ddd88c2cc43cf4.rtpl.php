@@ -1,14 +1,7 @@
-<?php if(!class_exists('Rain\Tpl')){exit;}?>		<div class="section2 row g-0 mb-3">
-			<div class="boxOne col-12 col-lg-5">
-				<?php $counter1=-1;  if( isset($topGames) && ( is_array($topGames) || $topGames instanceof Traversable ) && sizeof($topGames) ) foreach( $topGames as $key1 => $value1 ){ $counter1++; ?>
-				<div class="game mt-3" id="game_<?php echo htmlspecialchars( $value1["id_jogo"], ENT_COMPAT, 'UTF-8', FALSE ); ?>">
-					<img src="<?php echo htmlspecialchars( $value1["capa"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" class="d-block w-100" alt="game_<?php echo htmlspecialchars( $value1["id_jogo"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" />
-				</div>
-				<?php } ?>
-			</div>
-			<div class="boxTwo row g-0 col-12 col-lg-7">
-				<?php $counter1=-1;  if( isset($randomGroups) && ( is_array($randomGroups) || $randomGroups instanceof Traversable ) && sizeof($randomGroups) ) foreach( $randomGroups as $key1 => $value1 ){ $counter1++; ?>
-				<div class="group col-12 col-lg-5 offset-lg-1 mt-3 position-relative" data-bs-toggle="modal"
+<?php if(!class_exists('Rain\Tpl')){exit;}?>		<div class="section2 mb-3">
+			<div class="boxOne row g-0 col-12">
+				<?php $counter1=-1;  if( isset($allGroups) && ( is_array($allGroups) || $allGroups instanceof Traversable ) && sizeof($allGroups) ) foreach( $allGroups as $key1 => $value1 ){ $counter1++; ?>
+				<div class="group col-12 col-lg-6 mt-3 position-relative" data-bs-toggle="modal"
 				data-bs-target="#modalGroup_<?php echo htmlspecialchars( $value1["id_sala"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" id="group_<?php echo htmlspecialchars( $value1["id_sala"], ENT_COMPAT, 'UTF-8', FALSE ); ?>">
 					<div class="title col-12 py-1"><?php echo htmlspecialchars( $value1["nome"], ENT_COMPAT, 'UTF-8', FALSE ); ?></div>
 					<div class="banner col-12">
@@ -21,11 +14,32 @@
 						</div>
 						<div class="hour col-9"><?php echo htmlspecialchars( $value1["hr_inicio"], ENT_COMPAT, 'UTF-8', FALSE ); ?> - <?php echo htmlspecialchars( $value1["hr_fim"], ENT_COMPAT, 'UTF-8', FALSE ); ?></div>
 					</div>
-					<div class="sectionDay col-12 row g-0 mb-5 pb-5">
+					<div class="sectionDay col-12 row g-0 mb-3">
 						<div class="calendar col-3">
 							<img src="views/resources/site/icons/calendar.png" alt="calendar" width="25" height="19" />
 						</div>
 						<div class="day col-9"><?php echo htmlspecialchars( $value1["dia"], ENT_COMPAT, 'UTF-8', FALSE ); ?></div>
+					</div>
+					<div class="sectionClassification col-12 row g-0 mb-4">
+						<div class="bars col-3">
+							<img src="views/resources/site/icons/bars.png" alt="bars" width="25" height="19" />
+						</div>
+						<div class="stars col-9">
+							<img src="views/resources/site/icons/star.png" alt="star" width="20" height="14" />
+							<img src="views/resources/site/icons/star.png" alt="star" width="20" height="14" />
+							<img src="views/resources/site/icons/star.png" alt="star" width="20" height="14" />
+							<img src="views/resources/site/icons/star.png" alt="star" width="20" height="14" />
+							<img src="views/resources/site/icons/star.png" alt="star" width="20" height="14" />
+						</div>
+					</div>
+					<div class="comments col-12 mb-4 py-1">Comentário</div>
+						<div class="sectionComments col-12 row g-0 mb-5 pb-5">
+						<div class="comment col-3">
+							<img src="views/resources/site/icons/comment.png" alt="comment" width="25" height="19" />
+						</div>
+						<div class="text col-9">
+							<?php echo htmlspecialchars( $value1["comentario"], ENT_COMPAT, 'UTF-8', FALSE ); ?>
+						</div>
 					</div>
 					<div class="sectionPlayers col-12 row g-0 py-1 position-absolute bottom-0 start-0">
 						<div class="players col-3 offset-1">
