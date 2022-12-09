@@ -7,6 +7,8 @@ require_once("vendor/autoload.php");
 use \Slim\Slim;
 use \Fatematch\Page;
 use \Fatematch\Model\User;
+use \Fatematch\Model\Game;
+use \Fatematch\Model\Group;
 
 $app = new Slim();
 
@@ -35,9 +37,16 @@ $app->post('/login', function() {
 $app->get('/destaques', function() {
 	User::verifyLogin();
 
+	$topGames = Game::listTopGames();
+	$randomGroups = Group::listRandomGroups();
+
 	$page = new Page();
 
-	$page->setTpl("destaques");
+	$page->setTpl("destaques", [
+		'topGames'=>$topGames,
+		'randomGroups'=>$randomGroups
+	]);
+
 });
 
 $app->get('/logout', function() {

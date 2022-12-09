@@ -13,11 +13,11 @@ class User extends Model{
 		"id_usuario", "email", "nome_usuario", "senha"
 	];
 
-	public static function login($login, $password):User {
+	public static function login($email, $password):User {
 		$db = new Sql();
 
 		$results = $db->select("SELECT * FROM tb_usuarios WHERE email = :EMAIL", array(
-			":EMAIL"=>$login
+			":EMAIL"=>$email
 		));
 
 		if (count($results) === 0) {

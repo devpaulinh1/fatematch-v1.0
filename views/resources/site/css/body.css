@@ -1,279 +1,239 @@
 .section {
-  background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgba(0, 0, 0, 0.85);
 }
 
 .letter {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
-  border-top: 1px solid rgba(250, 250, 250, 0.5);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  height: 61px;
-  justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.85);
+	border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+	border-top: 1px solid rgba(250, 250, 250, 0.5);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	height: 61px;
+	justify-content: center;
 }
 
 .letter2 {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  height: 61px;
-  justify-content: left;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	height: 61px;
+	justify-content: left;
 }
 
 .linkLogin {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  height: 61px;
-  justify-content: left;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	height: 61px;
+	justify-content: left;
 }
 
 .linkLogin a {
-  color: rgba(250, 250, 250, 1);
-  text-decoration: none;
+	color: rgba(250, 250, 250, 1);
+	text-decoration: none;
 }
 
 .linkLogin a:hover {
-  color: rgba(214, 47, 100, 1);
-  transition: 0.5s;
+	color: rgba(214, 47, 100, 1);
+	transition: 0.5s;
 }
 
 .linkCadastro {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  height: 61px;
-  justify-content: left;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	height: 61px;
+	justify-content: left;
 }
 
 .linkCadastro a {
-  color: rgba(250, 250, 250, 1);
-  text-decoration: none;
+	color: rgba(250, 250, 250, 1);
+	text-decoration: none;
 }
 
 .linkCadastro a:hover {
-  color: rgba(7, 145, 195, 1);
-  transition: 0.5s;
+	color: rgba(7, 145, 195, 1);
+	transition: 0.5s;
 }
 
 .linkModal {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  height: 61px;
-  justify-content: left;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	height: 61px;
+	justify-content: left;
 }
 
 .linkModal small:hover {
-  color: rgba(112, 48, 160, 1);
-  transition: 0.5s;
-}
-
-.firstGroup {
-  background-color: rgba(0, 0, 0, 0.85);
-  border: 2px solid rgb(90, 90, 90, 0.4);
-  border-radius: 3px;
-  filter: opacity(80%);
-}
-
-.firstGroup:hover {
-  border: 2px solid rgb(90, 90, 90, 1);
-  filter: opacity(100%);
-  transition: 0.5s;
-}
-
-.title {
-  align-items: center;
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  justify-content: center;
-}
-
-.details {
-  align-items: center;
-  background-color: rgba(90, 90, 90, 0.85);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  justify-content: center;
-}
-
-.sectionHour {
-  align-items: center;
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  justify-content: right;
-}
-
-.clock {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.hour {
-  padding-right: 24.8px;
-  text-align: right;
-}
-
-.groupUser {
-  align-items: center;
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  justify-content: left;
-}
-
-.user {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.nickname {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.sectionDay {
-  align-items: center;
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-}
-
-.calendar {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.day {
-  padding-right: 24.8px;
-  text-align: right;
-}
-
-.sectionClassification {
-  align-items: center;
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  justify-content: right;
-}
-
-.bars {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.stars {
-  padding-right: 24.8px;
-  text-align: right;
-}
-
-.bars2 {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.stars2 {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.comments {
-  align-items: center;
-  background-color: rgba(90, 90, 90, 0.85);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  justify-content: center;
-}
-
-.sectionComments {
-  align-items: center;
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-  justify-content: right;
-}
-
-.comment {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.text {
-  padding-right: 24.8px;
-  text-align: justify;
-}
-
-.groupPlayers {
-  align-items: center;
-  background-color: rgba(214, 47, 100, 0.85);
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-}
-
-.sectionPlayer2 {
-  align-items: center;
-  background: linear-gradient(
-    to right,
-    rgba(214, 47, 100, 0.85) 65%,
-    rgba(7, 145, 195, 0.85) 35%
-  );
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-}
-
-.player {
-  padding-right: 12.4px;
-  text-align: right;
-}
-
-.number {
-  padding-left: 12.4px;
-  text-align: left;
-}
-
-.view {
-  text-align: center;
-}
-
-.groupCode {
-  align-items: center;
-  color: rgba(250, 250, 250, 1);
-  display: flex;
-}
-
-.search {
-  padding-left: 24.8px;
-  text-align: left;
-}
-
-.code {
-  padding-right: 24.8px;
-  text-align: right;
-}
-
-.secondGroup {
-  background-color: rgba(0, 0, 0, 0.85);
-  border: 2px solid rgb(90, 90, 90, 0.4);
-  border-radius: 3px;
-  filter: opacity(80%);
-}
-
-.secondGroup:hover {
-  border: 2px solid rgb(90, 90, 90, 1);
-  filter: opacity(100%);
-  transition: 0.5s;
+	color: rgba(112, 48, 160, 1);
+	transition: 0.5s;
 }
 
 .group {
-  background-color: rgba(0, 0, 0, 0.85);
-  border: 2px solid rgb(90, 90, 90, 0.4);
-  border-radius: 3px;
-  filter: opacity(80%);
+	background-color: rgba(0, 0, 0, 0.85);
+	border: 2px solid rgb(90, 90, 90, 0.4);
+	border-radius: 3px;
+	filter: opacity(80%);
 }
 
 .group:hover {
-  border: 2px solid rgb(90, 90, 90, 1);
-  filter: opacity(100%);
-  transition: 0.5s;
+	border: 2px solid rgb(90, 90, 90, 1);
+	filter: opacity(100%);
+	transition: 0.5s;
+}
+
+.title {
+	align-items: center;
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	justify-content: center;
+}
+
+.details {
+	align-items: center;
+	background-color: rgba(90, 90, 90, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	justify-content: center;
+}
+
+.sectionHour {
+	align-items: center;
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	justify-content: right;
+}
+
+.clock {
+	padding-left: 24.8px;
+	text-align: left;
+}
+
+.hour {
+	padding-right: 24.8px;
+	text-align: right;
+}
+
+.sectionDay {
+	align-items: center;
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+}
+
+.calendar {
+	padding-left: 24.8px;
+	text-align: left;
+}
+
+.day {
+	padding-right: 24.8px;
+	text-align: right;
+}
+
+.groupPlayers {
+	align-items: center;
+	background-color: rgba(214, 47, 100, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+}
+
+.groupPlayers2 {
+	align-items: center;
+	background-color: rgba(90, 90, 90, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+}
+
+.sectionPlayer {
+	align-items: center;
+	background: linear-gradient(to right, rgba(214, 47, 100, 0.85) 65%, rgba(7, 145, 195, 0.85) 35%);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+}
+
+.players {
+	padding-right: 12.4px;
+	text-align: right;
+}
+
+.number {
+	padding-left: 12.4px;
+	text-align: left;
+}
+
+.view {
+	text-align: center;
+}
+
+.sectionClassification {
+	align-items: center;
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	justify-content: right;
+}
+
+.bars {
+	padding-left: 24.8px;
+	text-align: left;
+}
+
+.bars2 {
+	padding-left: 24.8px;
+	text-align: left;
+}
+
+.stars {
+	padding-right: 24.8px;
+	text-align: right;
+}
+
+.stars2 {
+	padding-left: 24.8px;
+	text-align: left;
+}
+
+.groupCode {
+	align-items: center;
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+}
+
+.search {
+	padding-left: 24.8px;
+	text-align: left;
+}
+
+.code {
+	padding-right: 24.8px;
+	text-align: right;
+}
+
+.comments {
+	align-items: center;
+	background-color: rgba(90, 90, 90, 0.85);
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	justify-content: center;
+}
+
+.sectionComments {
+	align-items: center;
+	color: rgba(250, 250, 250, 1);
+	display: flex;
+	justify-content: right;
+}
+
+.comment {
+	padding-left: 24.8px;
+	text-align: left;
+}
+
+.text {
+	padding-right: 24.8px;
+	text-align: justify;
 }
